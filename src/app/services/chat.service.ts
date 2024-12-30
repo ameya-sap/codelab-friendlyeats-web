@@ -64,6 +64,7 @@ export class ChatService {
 
   // observable that is updated when the auth state changes
   user$ = user(this.auth);
+  
   currentUser: User | null = this.auth.currentUser;
   userSubscription: Subscription;
   
